@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds Project|Mona Galal</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="crud">
+
+            <div class="head">
+                <h2>CRUD Applications</h2><br/>
+                <p>product application</p>
+            </div>
+
+            <div class="inputs">
+                <input type="text" placeholder="title" id="title"/>
+            
+                <div class="price">
+                    <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                    <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                    <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                    <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                       <small id="total"> </small>
+                </div>
+                <input type="number" name="count" id="count" placeholder="count"/>
+                <input type="category" name="text" id="category" placeholder="category"/>
+                <button id="submit">CREATE</button>
+            </div>
+
+            <div class="outputs">
+                <div class="searchBlock">
+                    <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="search">
+                    <div class="btnSearch">
+                        <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Name</button>
+                        <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+                    </div>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Count</th>
+                    <th>Category</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </th>
+
+                <div class="" id="deleteAll">
+
+                </div>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&gt; &copy; Mona Galal &lt;</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
